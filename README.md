@@ -1,4 +1,4 @@
-This is an unmaintained, customized, unsupported FORK of [ScriptRunner](https://github.com/trichner/ScriptRunner) modified for my personal use. There will be more missing features than added ones.
+This is an unmaintained, customized, unsupported FORK of [ScriptRunner](https://github.com/trichner/ScriptRunner) modified for my personal use. There will be more missing features than added ones. Also, I don't really know Java (yet).
 
 For your purposes, I recommend the original repository (linked above).
 
