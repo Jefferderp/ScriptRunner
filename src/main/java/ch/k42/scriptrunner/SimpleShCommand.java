@@ -28,12 +28,12 @@ public class SimpleShCommand implements CommandExecutor {
         try {
             Process p = Minions.spawnProcess(plugin.getDataFolder(),args);
             ProcessWatcher pw = new ProcessWatcher(p,plugin.getDataFolder().getAbsolutePath() + File.separator + "scriptrunner-log.txt");
-            pw.addListener(new ProcessListener() {
+/**            pw.addListener(new ProcessListener() {
                 @Override
                 public void onProcessEnd(int ret) {
                     commandSender.sendMessage("Process exited with value: " + ret);
                 }
-            });
+            }); */
             pw.start();
             return true;
         } catch (IOException e) {
