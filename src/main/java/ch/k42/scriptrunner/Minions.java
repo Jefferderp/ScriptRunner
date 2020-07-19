@@ -44,7 +44,7 @@ public class Minions {
             ProcessBuilder pb = new ProcessBuilder(args);
             pb.directory(directory);
             pb.redirectErrorStream(true);
-            pb.redirectOutput(ProcessBuilder.Redirect.appendTo(new File(directory.getAbsolutePath() + File.separator + "lastlog.txt")));
+            pb.redirectOutput(ProcessBuilder.Redirect.appendTo(new File(directory.getAbsolutePath() + File.separator + "scriptrunner-log.txt")));
             return pb.start();
         }else{
             throw new IllegalArgumentException("The script has an illegal filename. Allowed characters: [A-Za-z\\.\\-_0-9]");
